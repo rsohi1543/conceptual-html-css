@@ -1,3 +1,63 @@
-h1{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,400&family=Open+Sans:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+   
+}
+.hero{
+    background-image: url(../images/cow.jpg);
+    background-position: auto;
+    background-size: cover;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 49% 84%, 0 70%);
+
+}
+.hero h1{
+    color: azure;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 900px;
+    font-family: cursive;
+    word-spacing: 40px;
+    letter-spacing: 5px;
+    /* padding: top 0;; */
+}
+.article ,#cow-type{
+    width: 80%;
+    margin: 60px auto;
+    padding: 60px;
+    background: linear-gradient(45deg , pink , rgb(122, 122, 244));
+}
+.article h2,#cow-type h2{
+    text-align: center;
+    font-size: 48px;
+    border-style: solid;
+    border-width: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: black;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+.article p{
+    font-size: 28px;
+    line-height: 2em;
+}
+.article p .imp{
+     font-size: 2rem;
+}
+.cow-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+.cow-images div{
+    min-width: 300px;
+}
+.cow-images img{
+    width: 100%;
 }
